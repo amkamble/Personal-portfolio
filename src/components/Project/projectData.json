@@ -1,0 +1,43 @@
+
+{
+    "projects": [
+      {
+        "name": "Portfolio Website",
+        "image": "https://raw.githubusercontent.com/amkamble/projects-images/main/Project%20img/portfolio.png",
+        "description": "Developed a fully functional e-commerce website using React.js .",
+        "githubLink": "https://github.com/username/project1",
+        "demoLink": "https://www.example.com/demo/project1"
+      },
+      {
+        "name": "Youtube Clone ",
+        "image" : "https://raw.githubusercontent.com/amkamble/projects-images/main/youtube%20clone.png" ,
+        "description": "Youtube clone Fully responsive ",
+        "githubLink": "https://github.com/amkamble/youtube_clone",
+        "demoLink": "https://www.example.com/demo/project2"
+      },
+      {
+        "name": "Movie App ",
+        "image": "https://raw.githubusercontent.com/amkamble/projects-images/main/Project%20img/movie.png",
+        "description": "Developed a fully functional e-commerce website using React.js and Node.js. Integrated payment gateway and implemented responsive design for seamless user experience.",
+        "githubLink": "https://github.com/amkamble/movi-one",
+        "demoLink": "https://www.example.com/demo/project1"
+      },
+      {
+        "name": "iPhone 15 Pro clone ",
+        "image": "https://raw.githubusercontent.com/amkamble/projects-images/main/Project%20img/iPhone%20project%20.png",
+        "description": "Developed a fully functional e-commerce website using React.js and Node.js. Integrated payment gateway and implemented responsive design for seamless user experience.",
+        "githubLink": "https://github.com/amkamble/iphone_clone",
+        "demoLink": "https://www.example.com/demo/project1"
+      },
+      {
+        "name": "doctor appointment system ",
+        "image": " https://raw.githubusercontent.com/amkamble/projects-images/main/Project%20img/health.png",
+        "description": "The Doctor Appointment Scheduling App is a straightforward and intuitive application built using React and styled with Tailwind CSS. The primary goal of this project is to provide users with a seamless interface for scheduling medical appointments with their doctors.",
+        "githubLink": "https://github.com/amkamble/heath-care",
+        "demoLink": "https://www.example.com/demo/project1"
+      }
+    ]
+  }
+  
+
+ 

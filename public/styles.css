@@ -1,0 +1,60 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color:rgb(20, 22, 25) ;
+    /* background-image: url('../public/img/bg2.jpg'); */
+    background-size:cover;
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    overflow-y: scroll;
+
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.whatsApp{
+   
+    font-size : 2rem ;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    bottom: 5%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .whatsApp:hover{
+    background: #fff;
+    color: #25D366; 
+  }
+
+
+
+

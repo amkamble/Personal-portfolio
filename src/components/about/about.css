@@ -1,0 +1,105 @@
+.about {
+  position: relative;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  h1 {
+    background-color:rgb(20, 22, 25);
+    color: springgreen;
+    font-size: clamp(2.4rem, 5vw, 8rem); 
+  }
+}
+
+.wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.imageContainer {
+  flex: 1;
+  height: 50%;
+}
+
+.image {
+  height: 8%;
+  top: 5%;
+  left: 20vw;
+  object-fit: cover;
+  position: absolute;
+  box-shadow: -3px -3px 1px #fff;
+  z-index: -1;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+}
+.desc {
+  font-size: 20px;
+  color: #f0f0f0;
+  margin: 10px;
+  padding: 0 2vw;
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  color: orange;
+}
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  text-align: center;
+  color: orange;
+  font-size: 36px;
+  z-index: 99;
+}
+
+h1 {
+  color: orange;
+  font-size: 3rem;
+  background-color: #0d1117;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: aliceblue;
+  border-radius: 25px;
+}
+
+/* 
+.container img{
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* .title{
+    font-size: 72px;
+}
+.para{
+    color: gray;
+    font-size: 20px;
+}
+.btnabout{
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+} */

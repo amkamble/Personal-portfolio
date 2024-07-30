@@ -1,0 +1,301 @@
+
+.intro {
+  height: calc(100vh - 4rem);
+  max-width: 100rem; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+.text-reveal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.text-item {
+  margin: 0;
+}
+
+.text {
+  font-size: 2rem;
+  color: #61dafb;
+}
+
+
+
+.slidingTextContainer {
+  font-size: clamp(2rem, 5vw, 8rem); 
+  color: rgba(240, 240, 240, 0.5); 
+  white-space: nowrap;
+  z-index: 1;
+  bottom: 5%;
+  right: 0;
+  position: absolute;
+  text-decoration: none;
+}
+
+.text {
+  opacity: 1;
+  font-size: clamp(0.8rem, 1vw, 1.5rem); 
+}
+
+.introContent {
+  margin-top: 2rem;
+  width: 90%; 
+  max-width: 80rem; 
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.introText {
+  font-size: clamp(2rem, 5vw, 6rem); 
+}
+
+.hello {
+  font-weight: 300;
+  font-size: clamp(1.8rem, 4vw, 4rem);
+}
+
+.introName {
+  opacity: 1;
+  font-size: clamp(2.5rem, 5vw, 7rem); 
+  color: transparent;
+  text-stroke: 1px springgreen;
+  -webkit-text-stroke: 1px springgreen;
+  font-weight: bold;
+}
+
+#skill-name {
+  margin-top: 1rem; 
+  font-size: clamp(2rem, 5vw, 5rem); 
+  color: springgreen;
+}
+
+.introPara {
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem); 
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 0 2vw;
+  color: #f0f0f0;
+  opacity: 0;
+}
+
+
+.social-icon a{
+  color: #f0f0f0;
+  margin: 0.5rem;
+  font-size: clamp(1.3rem, 3vw, 1rem);
+  cursor: pointer;
+}
+
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  margin: 1rem 2rem;
+  align-items: center;
+  padding: 10px 20px; 
+  border-radius: 2rem; 
+  border: 2px solid springgreen;
+  background-color: transparent;
+  color: #f0f0f0;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  z-index: 2;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  text-decoration: none; 
+}
+
+.btn ion-icon {
+  margin-right: 8px; 
+  font-size: clamp(0.8rem, 2vw, 1rem); 
+}
+
+.btn:hover {
+  background-color: darkgreen;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.circle {
+  height: clamp(3rem, 5vw, 5rem); 
+  width: clamp(3rem, 5vw, 5rem); 
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: -2;
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  box-shadow: 0 0 1rem #03a9f4; 
+}
+
+.square {
+  bottom: 5%;
+  right: 15%;
+  z-index: -2;
+  border-radius: 50%;
+  overflow: hidden;
+  height: clamp(6rem, 17vw, 15rem); 
+  width: clamp(6rem, 17vw, 15rem); 
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+  position: absolute;
+  box-shadow: 0 0 1rem #03a9f4; 
+}
+
+.resumeFrame {
+  width: 100vw;
+  position: absolute;
+}
+
+.resumeFrame button {
+  background-color: #03a9f4;
+  padding: 0.5rem 1rem; 
+  left: 50%;
+  top: -19px;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.resumeFrame button:hover {
+  color: red;
+  background-color: rgba(1, 1, 1, 0.618);
+  border: 1px solid gray;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .introContent {
+    max-width: 70rem; 
+  }
+  
+  .introText {
+    font-size: clamp(2rem, 4vw, 5rem);
+  }
+
+  .hello {
+    font-size: clamp(1.8rem, 3.5vw, 3.5rem); 
+  }
+
+  .introName {
+    font-size: clamp(2.2rem, 4vw, 6rem);
+  }
+
+  #skill-name {
+    font-size: clamp(1.8rem, 4vw, 4.5rem); 
+  }
+}
+
+@media (max-width: 992px) {
+  .introContent {
+    max-width: 60rem; 
+  }
+  
+  .introText {
+    font-size: clamp(1.8rem, 3vw, 4rem); 
+  }
+
+  .hello {
+    font-size: clamp(1.6rem, 3vw, 3rem); 
+  }
+
+  .introName {
+    font-size: clamp(2rem, 3.5vw, 5rem); 
+  }
+
+  #skill-name {
+    font-size: clamp(1.6rem, 3.5vw, 3.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .introContent {
+    max-width: 90%; 
+  }
+  
+  .introText {
+    font-size: clamp(1.6rem, 2.5vw, 3.5rem); 
+  }
+
+  .hello {
+    font-size: clamp(1.4rem, 2.5vw, 2.8rem); 
+  }
+
+  .introName {
+    font-size: clamp(1.8rem, 2.5vw, 4rem); 
+  }
+
+  #skill-name {
+    font-size: clamp(1.4rem, 2.5vw, 2.8rem); 
+  }
+
+  .btn {
+    margin: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .circle, .square {
+    height: clamp(2.5rem, 4vw, 4rem);
+    width: clamp(2.5rem, 4vw, 4rem); 
+  }
+}
+
+@media (max-width: 520px) {
+  .intro {
+    height: auto; 
+  }
+  
+  .introContent {
+    width: 100%;
+    max-width: 100%; 
+  }
+  
+  .introText {
+    font-size: clamp(1.4rem, 2vw, 2.5rem); 
+  }
+
+  .hello {
+    font-size: clamp(1.2rem, 2vw, 2.2rem); 
+  }
+
+  .introName {
+    font-size: clamp(1.6rem, 2vw, 3rem); 
+  }
+
+  #skill-name {
+    font-size: clamp(1.2rem, 2vw, 2rem); 
+  }
+
+  .introPara {
+    padding: 0 5vw; 
+  }
+  
+  .btn {
+    margin: 0.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .circle, .square {
+    height: clamp(2rem, 3vw, 3rem);
+    width: clamp(2rem, 3vw, 3rem); 
+  }
+}

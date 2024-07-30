@@ -1,0 +1,167 @@
+.navbar {
+  color: #fff;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  padding: 0.4rem 0;
+  z-index: 3;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(42, 42, 42, 0.979);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.logo {
+  text-decoration: none;
+  color: springgreen;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.logo img {
+  height: 40px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon__line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.4s ease;
+}
+
+.menu-icon.open .menu-icon__line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.open .menu-icon__line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .menu-icon__line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  width: 80%;
+  padding: 20px;
+  gap: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #272827;
+  z-index: 3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li {
+  margin-right: 20px;
+  text-align: center;
+  align-content: center;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-link.active {
+  color: springgreen;
+  padding-bottom: 0.3rem;
+  padding-bottom: 1px solid springgreen ;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.nav-links a:hover {
+  color: springgreen;
+}
+.nav-links a:last-child:hover {
+  padding-bottom: none;
+  border-bottom: none;
+}
+
+/* 
+.nav-link.active {
+  color: springgreen; 
+} */
+ 
+
+li .hire-btn  {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: springgreen;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  text-decoration: none; 
+  padding-bottom: 2px;
+  border-bottom: 2px solid springgreen;
+}
+/* li .hire-btn:hover {
+ color: #fff;
+ border-bottom: 2px solid gray;
+}  */
+
+.hire-btn ion-icon {
+  margin-right: 4px; /* Space between icon and text */
+  font-size: 20px; /* Adjust icon size */
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

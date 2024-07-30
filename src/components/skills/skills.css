@@ -1,0 +1,97 @@
+/* Default styles */
+
+.skills {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-skills{
+    text-align: center;
+    color:  springgreen;
+    font-size: clamp(2.4rem, 5vw, 8rem); 
+  }
+  .power-description{
+ padding: 0.9rem 2rem;
+ text-align: start;
+  }
+  .skills-list {
+    margin-top: 20px;
+    width: 50%;
+    backdrop-filter: blur(54px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+    background-color: rgba(59, 67, 83, 0.63);
+    border-radius: 12px;
+    padding: 2vw;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+  
+  .skill-item {
+    margin-bottom: 10px;
+    padding: 0 2rem;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: springgreen;
+  }
+  
+  .skill-progress {
+    background-color: #504d4d;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-progress-bar {
+    height: 100%;
+    background-color: #fefeff;
+  }
+  
+  /* Responsive styles */
+  
+  /* For small devices (e.g., phones) */
+  @media (max-width: 768px) {
+    .skills {
+      padding: 10px;
+    }
+  
+    .skill-name {
+      font-size: 16px;
+    }
+    .skills-list{
+      width: 80%;
+    }
+  
+    .skill-progress {
+      height: 15px;
+    }
+  }
+  
+  /* For medium and large devices */
+  @media (max-width: 360px) {
+    .skills {
+      padding: 2px;
+    }
+  
+    .skill-name {
+      font-size: 18px;
+    }
+  .power-description{
+    font-size: 10px;
+    padding: 0.9rem 0rem;
+  }
+  .skills-list{
+    width: 100%;
+  }
+    .skill-progress {
+      height: 10px;
+    }
+  }
+  
